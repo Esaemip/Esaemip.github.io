@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f4f7f5">
+  <title>길을 잃었습니다 — Esaemip</title>
+  <style>
+    :root { --snow:#f4f7f5; --ink:#252c28; --muted:#6d7771; --line:#d8dfdb; --green:#405e53; --warm:#8a7565; }
+    * { box-sizing:border-box; }
+    body { margin:0; overflow:hidden; color:var(--ink); font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Segoe UI",sans-serif; background:var(--snow); }
+    body::before { content:""; position:fixed; inset:-220px 0 0; pointer-events:none; opacity:.24; background-image:radial-gradient(circle,rgba(255,255,255,.98) 0 1.7px,transparent 2.3px),radial-gradient(circle,rgba(121,146,156,.28) 0 1px,transparent 1.5px); background-position:22px 18px,105px 87px; background-size:190px 220px,145px 175px; animation:snow 18s linear infinite; }
+    a { color:inherit; text-decoration:none; }
+    .site-nav { position:relative; z-index:2; display:flex; width:min(1040px,calc(100% - 48px)); height:80px; margin:auto; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(101,120,113,.12); }
+    .brand { display:flex; align-items:center; gap:9px; }
+    .brand svg { width:31px; height:31px; }
+    .brand strong { font-size:20px; font-weight:900; letter-spacing:-.05em; }
+    .brand span { color:#87918c; font-size:10px; font-weight:700; }
+    .nav-links { display:flex; gap:27px; color:#56625c; font-size:13px; font-weight:750; }
+    .error-main { position:relative; z-index:1; display:flex; width:min(720px,calc(100% - 48px)); min-height:calc(100vh - 80px); margin:auto; padding:80px 0 130px; align-items:center; justify-content:center; flex-direction:column; text-align:center; }
+    .error-main svg { width:70px; height:70px; margin-bottom:17px; transform:rotate(-6deg); }
+    .error-main>p { margin:0; color:var(--warm); font:800 11px Consolas,monospace; }
+    h1 { margin:13px 0 0; font-size:clamp(38px,6vw,58px); letter-spacing:-.06em; }
+    .error-main>span { margin-top:17px; color:var(--muted); font-size:14px; }
+    .error-main>a { margin-top:28px; padding-bottom:2px; border-bottom:1px solid #a9b7b1; color:var(--green); font-size:12px; font-weight:850; }
+    @keyframes snow { from{transform:translate3d(-7px,0,0)} to{transform:translate3d(17px,270px,0)} }
+    @media(max-width:600px){ .site-nav{width:calc(100% - 32px);height:66px}.brand span,.nav-links a:first-child{display:none}.nav-links{gap:15px;font-size:11px}.error-main{width:calc(100% - 32px);min-height:calc(100vh - 66px);padding-bottom:100px}h1{font-size:39px} }
+    @media(prefers-reduced-motion:reduce){ body::before{animation:none} }
+  </style>
+</head>
+<body class="error-page">
+  <nav class="site-nav" aria-label="주요 메뉴">
+    <a class="brand" href="/Esaemip.github.io/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 27 7 8l18 10c4-2 10-2 14 0L57 8l-5 19c3 4 4 9 2 14l-6 4 2 5-10 1c-4 4-12 4-16 0l-10-1 2-5-6-4c-2-5-1-10 2-14Z" fill="#fbfcf8" stroke="#35463f" stroke-width="2.4"/><path d="M20 34c2 2 5 2 7 0m10 0c2 2 5 2 7 0M29 40c2-2 4-2 6 0-1 3-5 3-6 0Z" fill="none" stroke="#35463f" stroke-width="2.2" stroke-linecap="round"/></svg><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
+    <div class="nav-links">
+      <a href="/Esaemip.github.io/#records">기록</a>
+      <a href="/Esaemip.github.io/about.html">소개</a>
+      <a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </nav>
+  <main class="error-main">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 27 7 8l18 10c4-2 10-2 14 0L57 8l-5 19c3 4 4 9 2 14l-6 4 2 5-10 1c-4 4-12 4-16 0l-10-1 2-5-6-4c-2-5-1-10 2-14Z" fill="#fbfcf8" stroke="#35463f" stroke-width="2.4"/><path d="M20 34c2 2 5 2 7 0m10 0c2 2 5 2 7 0M29 40c2-2 4-2 6 0-1 3-5 3-6 0Z" fill="none" stroke="#35463f" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <p>404</p>
+    <h1>여우도 길을 잃었습니다.</h1>
+    <span>찾던 기록이 없거나 다른 곳으로 옮겨진 것 같습니다.</span>
+    <a href="/Esaemip.github.io/">처음으로 돌아가기 →</a>
+  </main>
+</body>
+</html>

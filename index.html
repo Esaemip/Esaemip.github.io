@@ -4,60 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="개발과 정보보안을 공부하며 배운 내용을 정리하는 Esaemip의 기록 공간입니다.">
+  <meta name="theme-color" content="#f3f6f2">
+  <meta property="og:title" content="Esaemip — 개발·보안 기록">
+  <meta property="og:description" content="개발과 정보보안을 공부하며 막힌 과정까지 남기는 기록장입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jahwanlee02.github.io/Esaemip.github.io/assets/white-fox-hero-v6-web.jpg">
   <title>Esaemip — 개발·보안 기록</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/fox-mark.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Esaemip의 기록" href="feed.xml">
+  <link rel="stylesheet" href="journal.css">
 </head>
-<body>
+<body class="home-page">
   <nav class="site-nav" aria-label="주요 메뉴">
-    <a class="brand" href="#top">Esaemip</a>
+    <a class="brand" href="#top"><img src="assets/fox-mark.svg" alt=""><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
     <div class="nav-links">
-      <a href="#records">기록</a><a href="#study">공부 중</a>
+      <a href="#records">기록</a><a href="about.html">소개</a>
       <a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub</a>
     </div>
   </nav>
   <header class="hero" id="top">
     <div class="hero-copy">
-      <p class="eyebrow">잘 모르겠어서 적기 시작했습니다</p>
-      <h1>일단 해보고,<br>막히면 적어둡니다.</h1>
-      <p class="hero-description">개발과 보안을 공부하면서 만난 오류, 삽질, 뜻밖의 해결책을 모읍니다. 어제의 내가 오늘의 나를 덜 괴롭히도록.</p>
-      <a class="hero-link" href="#records">기록 둘러보기 <span aria-hidden="true">↓</span></a>
+      <p class="eyebrow">이새밉의 기록장</p>
+      <h1>개발이랑 보안,<br>그리고 자주 하는 <span>삽질.</span></h1>
+      <p class="hero-description">잘 모르겠어서 시작했고, 까먹을 것 같아서 적습니다. 해결한 방법만큼 안 됐던 방법도 같이 남깁니다.</p>
+      <div class="hero-meta"><span>첫 기록 2026. 10. 27.</span><a href="#records">최근 글 바로가기 →</a></div>
     </div>
-    <p class="fox-note" aria-hidden="true">머릿속 로딩 중…</p>
+    <figure class="hero-figure">
+      <img src="assets/white-fox-hero-v6-web.jpg" width="1280" height="720" alt="눈밭에 얼굴을 묻고 엉뚱한 표정을 짓는 흰 여우">
+      <figcaption>어? 아까는 됐는데</figcaption>
+    </figure>
   </header>
+  <div class="category-intro" aria-hidden="true">
+    <div><p>기록 서랍</p></div>
+    <p>하나씩 열어보면 대충 이런 걸 하고 있습니다.</p>
+  </div>
+  <nav class="category-tabs" aria-label="기록 카테고리">
+    <a href="category.html?category=development"><span>01</span><strong>개발</strong><small>만든 것과 막힌 것</small></a>
+    <a href="category.html?category=ctf"><span>02</span><strong>CTF / Wargame</strong><small>풀이와 시행착오</small></a>
+    <a href="category.html?category=bug-bounty"><span>03</span><strong>Bug Bounty</strong><small>재현과 대응</small></a>
+    <a href="category.html?category=writing"><span>04</span><strong>블로그 / 기술문서</strong><small>다시 보는 기록</small></a>
+    <a href="category.html?category=research"><span>05</span><strong>논문 / 컨퍼런스</strong><small>읽고 남은 질문</small></a>
+    <a href="category.html?category=achievements"><span>06</span><strong>공모전 / 자격증</strong><small>준비와 회고</small></a>
+  </nav>
   <main>
-    <section class="records" id="records">
-      <div class="section-heading">
-        <p class="section-label category-label">
-          <img class="snowy-shovel" src="assets/snowy-shovel.png" alt="" aria-hidden="true">
-          요즘 쌓는 것들
-        </p>
-        <p>개발부터 워게임, 논문까지. 배운 건 적고, 틀린 건 고치고, 까먹으면 다시 찾아봅니다.</p>
-      </div>
-      <div class="category-grid">
-        <article class="category-card"><span>01</span><h3>개발</h3><p>프로젝트를 만들며 배운 코드와 시행착오</p></article>
-        <article class="category-card"><span>02</span><h3>CTF / Wargame</h3><p>문제를 풀며 익힌 접근 방법과 풀이 과정</p></article>
-        <article class="category-card"><span>03</span><h3>Bug Bounty</h3><p>취약점 분석과 버그바운티 학습 기록</p></article>
-        <article class="category-card"><span>04</span><h3>블로그 / 기술문서</h3><p>읽고 쓰며 익힌 기술 문서와 블로그 운영</p></article>
-        <article class="category-card"><span>05</span><h3>논문 / 컨퍼런스</h3><p>흥미롭게 본 연구와 발표 내용 정리</p></article>
-        <article class="category-card"><span>06</span><h3>공모전 / 자격증</h3><p>도전 과정과 준비하며 알게 된 것들</p></article>
-      </div>
-    </section>
+    <div class="home-layout" id="records">
+      <section class="post-feed" aria-labelledby="recent-title">
+        <div class="feed-heading"><h2 id="recent-title">최근 기록</h2><div class="feed-meta"><span id="home-post-count">1개의 글</span><a href="feed.xml" aria-label="RSS 피드 열기">RSS</a></div></div>
+        <div id="home-post-list">
+          <a class="post-row" href="posts/github-pages-first-blog.html">
+            <time datetime="2026-10-27">2026. 10. 27.</time>
+            <div>
+              <p class="post-tag">블로그 / 기술문서</p>
+              <h3>GitHub Pages 블로그를 처음 만든 과정</h3>
+              <p>저장소를 만들고, 흰 여우를 고르고, 카테고리를 연결하기까지.</p>
+            </div>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+      <aside class="owner-note">
+        <img src="assets/snowy-shovel-web.png" width="320" height="213" alt="" aria-hidden="true">
+        <p class="section-label">주인장 메모</p>
+        <h2>안 까먹으려고 씁니다.</h2>
+        <p>잘 쓰는 것보다 나중에 다시 알아보는 게 우선입니다. 틀린 내용은 발견하면 조용히 고칩니다.</p>
+        <div class="owner-links"><a href="about.html">주인장 더 보기 →</a><a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </aside>
+    </div>
     <section class="study-moment" id="study">
       <div class="study-heading">
         <div>
           <p class="section-label">오늘도 뒷공중</p>
-          <h2>모르면 같이 헤매고,<br>알게 되면 바로 적습니다.</h2>
+          <h2>셋 다 모르면서<br>말은 많습니다.</h2>
         </div>
-        <p>정답은 늦어도 대화는 빠른 편.</p>
+        <p>셋이 모였는데 정답은 아직.</p>
       </div>
       <div class="fox-scene">
-        <img src="assets/fox-study-scene.png" alt="눈밭에서 노트북과 필기 노트를 펼쳐놓고 함께 공부하는 흰 여우 세 마리">
+        <img src="assets/fox-study-scene-web.jpg" width="1440" height="540" loading="lazy" alt="눈밭에서 노트북과 필기 노트를 펼쳐놓고 함께 공부하는 흰 여우 세 마리">
         <p class="chat chat-one">야, 너 이거 알아?</p>
         <p class="chat chat-two">ㅋㅋ 아는 척하지 마 인마</p>
         <p class="chat chat-three">잠깐만… 거의 다 찾았어</p>
       </div>
     </section>
   </main>
-  <footer><p>© 2026 Esaemip. 오늘도 하나쯤은 알아가는 중.</p></footer>
+  <footer class="site-footer">
+    <a class="footer-brand" href="#top"><img src="assets/fox-mark.svg" alt=""><span>Esaemip</span></a>
+    <nav aria-label="하단 메뉴"><a href="#records">기록</a><a href="about.html">소개</a><a href="feed.xml">RSS</a><a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+    <p>© 2026 Esaemip.</p>
+  </footer>
+  <script src="posts-data.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
