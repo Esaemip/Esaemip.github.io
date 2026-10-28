@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const contentDir = join(root, "content");
 const postsDir = join(root, "posts");
-const siteUrl = "https://jahwanlee02.github.io/Esaemip.github.io";
+const siteUrl = "https://esaemip.github.io";
 
 const categories = {
   development: { number: "01", name: "개발" },
@@ -193,7 +193,7 @@ function postHtml(post) {
   <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
   <nav class="site-nav post-nav" aria-label="주요 메뉴">
     <a class="brand" href="../index.html"><img src="../assets/fox-mark.svg" alt=""><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
-    <div class="nav-links"><a href="../index.html#records">기록</a><a href="../about.html">소개</a><a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub</a></div>
+    <div class="nav-links"><a href="../index.html#records">기록</a><a href="../about.html">소개</a><a href="https://github.com/Esaemip" target="_blank" rel="noreferrer">GitHub</a></div>
   </nav>
   <main class="post-main">
     <a class="back-link" href="../category.html?category=${post.meta.category}">← ${category.name}</a>
@@ -215,7 +215,7 @@ ${toc}
   </main>
   <footer class="site-footer">
     <a class="footer-brand" href="../index.html"><img src="../assets/fox-mark.svg" alt=""><span>Esaemip</span></a>
-    <nav aria-label="하단 메뉴"><a href="../index.html#records">기록</a><a href="../about.html">소개</a><a href="../feed.xml">RSS</a><a href="https://github.com/JahwanLEE02" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+    <nav aria-label="하단 메뉴"><a href="../index.html#records">기록</a><a href="../about.html">소개</a><a href="../feed.xml">RSS</a><a href="https://github.com/Esaemip" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
     <p>© 2026 Esaemip.</p>
   </footer>
   <script src="../site.js"></script>

@@ -2,13 +2,13 @@
 <rss version="2.0">
   <channel>
     <title>Esaemip의 개발·보안 기록</title>
-    <link>https://jahwanlee02.github.io/Esaemip.github.io/</link>
+    <link>https://esaemip.github.io/</link>
     <description>개발과 정보보안을 공부하며 막힌 과정까지 남기는 기록장입니다.</description>
     <language>ko</language>
     <item>
       <title>GitHub Pages 블로그를 처음 만든 과정</title>
-      <link>https://jahwanlee02.github.io/Esaemip.github.io/posts/github-pages-first-blog.html</link>
-      <guid>https://jahwanlee02.github.io/Esaemip.github.io/posts/github-pages-first-blog.html</guid>
+      <link>https://esaemip.github.io/posts/github-pages-first-blog.html</link>
+      <guid>https://esaemip.github.io/posts/github-pages-first-blog.html</guid>
       <pubDate>Mon, 26 Oct 2026 15:00:00 GMT</pubDate>
       <description>저장소 하나 만드는 것부터 흰 여우 블로그가 되기까지, 헷갈렸던 지점과 직접 고친 내용을 남깁니다.</description>
     </item>
