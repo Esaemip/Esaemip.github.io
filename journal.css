@@ -358,7 +358,6 @@ main { width: min(1120px, calc(100% - 56px)); margin: 0 auto; }
 .post-main article {
   padding: 0 0 10px;
   border-top: 1px solid #aebbb5;
-  background: rgba(251,252,248,.58);
 }
 .post-header { padding: 57px 0 48px; border-bottom: 1px solid var(--line); }
 .post-category { margin: 0 0 15px; color: var(--blue); font-size: 10px; font-weight: 800; }
@@ -384,7 +383,7 @@ main { width: min(1120px, calc(100% - 56px)); margin: 0 auto; }
   top: 61px;
   left: -51px;
   margin: 0;
-  color: #a3ada8;
+  color: #65716b;
   font: 800 10px Consolas, monospace;
   letter-spacing: .08em;
 }
@@ -515,6 +514,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(95,128,138,.33);
   0%, 63%, 90%, 100% { transform: rotate(2deg) translateY(0); }
   72% { transform: rotate(2deg) translateY(-6px); }
 }
+@media (max-width: 920px) {
+  .article-number { position: static; margin: 0 0 10px; }
+}
+
 @media (max-width: 820px) {
   .hero { gap: 30px; }
   .hero-meta { align-items: flex-start; flex-direction: column; gap: 7px; }
@@ -530,7 +533,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(95,128,138,.33);
   .category-tabs a:nth-last-child(-n+2) { border-bottom: 0; }
   .about-columns { grid-template-columns: 1fr; gap: 55px; }
   .about-rules { width: min(430px, 100%); margin-left: auto; }
-  .article-number { position: static; margin: 0 0 10px; }
 }
 
 @media (max-width: 740px) {
@@ -598,7 +600,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(95,128,138,.33);
   .post-toc > span { min-width: 58px; }
   .post-toc a { min-width: 118px; }
   .article-body section { padding: 44px 0; }
-  .article-number { position: static; margin: 0 0 10px; }
   .article-body h2 { font-size: 24px; }
   .article-body section > p:not(.article-number), .article-body ul, .article-body ol { font-size: 14px; }
   .about-main { width: calc(100% - 32px); max-width: calc(100% - 32px); margin-top: 12px; margin-bottom: 80px; }
