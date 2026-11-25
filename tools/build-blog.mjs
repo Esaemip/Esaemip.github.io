@@ -173,6 +173,11 @@ function postHtml(post) {
   const toc = sections.map((section, index) =>
     `        <a href="#${section.id}"><b>${String(index + 1).padStart(2, "0")}</b> ${escapeHtml(section.title)}</a>`
   ).join("\n");
+  const tocHtml = post.meta.toc === "false" ? "" : `
+      <nav class="post-toc" aria-label="이 글의 순서">
+        <span>이 글에서</span>
+${toc}
+      </nav>`;
   const body = sections.map((section, index) => `
         <section id="${section.id}">
           <p class="article-number">${String(index + 1).padStart(2, "0")}</p>
@@ -212,10 +217,7 @@ function postHtml(post) {
         <p class="post-lead">${escapeHtml(post.meta.description)}</p>
         <div class="post-meta"><time datetime="${post.meta.date}">${dateText}</time><span>${escapeHtml(label)}</span></div>
       </header>
-      <nav class="post-toc" aria-label="이 글의 순서">
-        <span>이 글에서</span>
-${toc}
-      </nav>
+${tocHtml}
       <div class="article-body">${body}
       </div>
     </article>
