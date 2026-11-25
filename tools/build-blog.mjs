@@ -121,6 +121,14 @@ function renderBlocks(lines) {
       continue;
     }
 
+    const image = line.match(/^!\[([^\]]*)\]\(([^\s)]+)\)$/);
+    if (image) {
+      const [, alt, src] = image;
+      blocks.push(`<figure class="article-figure"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy"><figcaption>${escapeHtml(alt)}</figcaption></figure>`);
+      i += 1;
+      continue;
+    }
+
     if (line.startsWith("### ")) {
       blocks.push(`<h3>${inlineMarkdown(line.slice(4).trim())}</h3>`);
       i += 1;
