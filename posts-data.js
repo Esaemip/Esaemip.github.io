@@ -1,7 +1,7 @@
 window.ESAEMIP_POSTS = [
   {
     "title": "CopyFail(CVE-2026-31431) 분석: AF_ALG AEAD의 in-place 처리와 Linux LPE",
-    "description": "격리된 VirtualBox 환경에서 CopyFail의 공개 PoC를 재현하고, AF_ALG AEAD 경로의 in-place 처리 문제와 수정 패치를 분석한 기록.",
+    "description": "Kali VM에서 CopyFail을 직접 재현해 보고, 왜 패치 전 커널에서만 동작하는지 코드와 diff를 따라가며 정리한 기록.",
     "date": "2026-11-26",
     "category": "writing",
     "url": "posts/cve-2026-31431-copyfail.html"
