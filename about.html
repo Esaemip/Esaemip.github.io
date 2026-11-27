@@ -8,9 +8,11 @@
   <title>주인장 — Esaemip</title>
   <link rel="icon" href="assets/fox-mark.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Esaemip의 기록" href="feed.xml">
+  <script>(function(){var t;try{t=localStorage.getItem("esaemip-theme")}catch(e){}document.documentElement.dataset.theme=t==="dark"?"dark":"light"})()</script>
   <link rel="stylesheet" href="journal.css">
 </head>
-<body class="about-page">
+<body id="top" class="about-page">
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
   <nav class="site-nav" aria-label="주요 메뉴">
     <a class="brand" href="index.html"><img src="assets/fox-mark.svg" alt=""><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
     <div class="nav-links">
@@ -20,7 +22,7 @@
     </div>
   </nav>
 
-  <main class="about-main">
+  <main class="about-main" id="main-content">
     <header class="about-hero">
       <div class="about-intro">
         <p class="eyebrow">주인장</p>
@@ -69,5 +71,6 @@
     <nav aria-label="하단 메뉴"><a href="index.html#records">기록</a><a href="about.html">소개</a><a href="feed.xml">RSS</a><a href="https://github.com/Esaemip" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
     <p>© 2026 Esaemip.</p>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>

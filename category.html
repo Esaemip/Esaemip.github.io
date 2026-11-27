@@ -8,9 +8,11 @@
   <title>기록 — Esaemip</title>
   <link rel="icon" href="assets/fox-mark.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Esaemip의 기록" href="feed.xml">
+  <script>(function(){var t;try{t=localStorage.getItem("esaemip-theme")}catch(e){}document.documentElement.dataset.theme=t==="dark"?"dark":"light"})()</script>
   <link rel="stylesheet" href="journal.css">
 </head>
-<body class="category-page">
+<body id="top" class="category-page">
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
   <nav class="site-nav" aria-label="주요 메뉴">
     <a class="brand" href="index.html"><img src="assets/fox-mark.svg" alt=""><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
     <div class="nav-links">
@@ -40,7 +42,7 @@
     <a href="category.html?category=achievements"><span>06</span><strong>공모전 / 자격증</strong><small>준비와 회고</small></a>
   </nav>
 
-  <main class="category-layout">
+  <main class="category-layout" id="main-content">
     <section class="category-posts" aria-labelledby="post-list-title">
       <div class="post-list-heading">
         <h2 id="post-list-title">이 카테고리의 글</h2>
@@ -75,5 +77,6 @@
   </footer>
   <script src="posts-data.js"></script>
   <script src="category.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>

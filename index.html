@@ -12,9 +12,11 @@
   <title>Esaemip — 개발·보안 기록</title>
   <link rel="icon" href="assets/fox-mark.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Esaemip의 기록" href="feed.xml">
+  <script>(function(){var t;try{t=localStorage.getItem("esaemip-theme")}catch(e){}document.documentElement.dataset.theme=t==="dark"?"dark":"light"})()</script>
   <link rel="stylesheet" href="journal.css">
 </head>
-<body class="home-page">
+<body id="top" class="home-page">
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
   <nav class="site-nav" aria-label="주요 메뉴">
     <a class="brand" href="#top"><img src="assets/fox-mark.svg" alt=""><strong>Esaemip</strong><span>개발·보안 공부 기록</span></a>
     <div class="nav-links">
@@ -22,7 +24,7 @@
       <a href="https://github.com/Esaemip" target="_blank" rel="noreferrer">GitHub</a>
     </div>
   </nav>
-  <header class="hero" id="top">
+  <header class="hero">
     <div class="hero-copy">
       <p class="eyebrow">이새밉의 기록장</p>
       <h1>개발이랑 보안,<br>그리고 자주 하는 <span>삽질.</span></h1>
@@ -46,10 +48,16 @@
     <a href="category.html?category=research"><span>05</span><strong>논문 / 컨퍼런스</strong><small>읽고 남은 질문</small></a>
     <a href="category.html?category=achievements"><span>06</span><strong>공모전 / 자격증</strong><small>준비와 회고</small></a>
   </nav>
-  <main>
+  <main id="main-content">
     <div class="home-layout" id="records">
       <section class="post-feed" aria-labelledby="recent-title">
         <div class="feed-heading"><h2 id="recent-title">최근 기록</h2><div class="feed-meta"><span id="home-post-count">1개의 글</span><a href="feed.xml" aria-label="RSS 피드 열기">RSS</a></div></div>
+        <form class="post-search" role="search" action="#records">
+          <label for="post-search" class="visually-hidden">기록 검색</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+          <input id="post-search" type="search" placeholder="제목, 내용, 카테고리로 찾기" autocomplete="off" spellcheck="false">
+          <kbd aria-hidden="true">/</kbd>
+        </form>
         <div id="home-post-list">
           <a class="post-row" href="posts/github-pages-first-blog.html">
             <time datetime="2026-10-27">2026. 10. 27.</time>
