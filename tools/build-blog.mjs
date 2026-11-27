@@ -291,6 +291,12 @@ function postHtml(post, { previous, next, related }) {
   const toc = sections.map((section, index) =>
     `        <a href="#${section.id}"><b>${String(index + 1).padStart(2, "0")}</b> ${escapeHtml(section.title)}</a>`
   ).join("\n");
+  // "toc: false" in the front matter hides both the table of contents box and the side rail.
+  const tocHtml = meta.toc === "false" ? "" : `      <nav class="post-toc" aria-label="이 글의 순서">
+        <span>이 글에서</span>
+${toc}
+      </nav>
+`;
   const body = sections.map((section, index) => `
         <section id="${section.id}">
           <p class="article-number">${String(index + 1).padStart(2, "0")}</p>
@@ -347,11 +353,7 @@ function postHtml(post, { previous, next, related }) {
         <p class="post-lead">${escapeHtml(meta.description)}</p>
         <div class="post-meta"><time datetime="${meta.date}">${formatDate(meta.date)}</time><span>약 ${post.minutes}분</span><span>${escapeHtml(label)}</span></div>
       </header>
-      <nav class="post-toc" aria-label="이 글의 순서">
-        <span>이 글에서</span>
-${toc}
-      </nav>
-      <div class="article-body">${body}
+${tocHtml}      <div class="article-body">${body}
       </div>
     </article>
 ${previous || next ? `

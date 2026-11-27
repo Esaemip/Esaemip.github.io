@@ -6,6 +6,13 @@
     <description>개발과 정보보안을 공부하며 막힌 과정까지 남기는 기록장입니다.</description>
     <language>ko</language>
     <item>
+      <title>CopyFail(CVE-2026-31431) 분석: AF_ALG AEAD의 in-place 처리와 Linux LPE</title>
+      <link>https://esaemip.github.io/posts/cve-2026-31431-copyfail.html</link>
+      <guid>https://esaemip.github.io/posts/cve-2026-31431-copyfail.html</guid>
+      <pubDate>Wed, 25 Nov 2026 15:00:00 GMT</pubDate>
+      <description>Kali VM에서 CopyFail을 직접 재현해 보고, 왜 패치 전 커널에서만 동작하는지 코드와 diff를 따라가며 정리한 기록.</description>
+    </item>
+    <item>
       <title>&#39;나&#39;에 대해 기록하기</title>
       <link>https://esaemip.github.io/posts/post-20261122-mylife.html</link>
       <guid>https://esaemip.github.io/posts/post-20261122-mylife.html</guid>
